@@ -2,19 +2,19 @@
   "compilerOptions": {
     "sourceMap": true,
     "module": "ESNext",
-    "target": "ES6",
-    "experimentalDecorators": true,
+    "target": "ES2020",
     "strictNullChecks": false,
     "declaration": true,
     "rootDir": "./src",
     "outDir": "./lib",
     "strict": false,
     "lib": [
-      "esnext",
+      "ES2020",
       "dom"
     ],
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "skipLibCheck": true
   },
   "compileOnSave": false,
   "include": [
