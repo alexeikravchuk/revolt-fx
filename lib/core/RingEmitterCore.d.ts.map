@@ -1,0 +1,1 @@
+{"version":3,"file":"RingEmitterCore.d.ts","sourceRoot":"","sources":["../../src/core/RingEmitterCore.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,QAAQ,EAAE,MAAM,aAAa,CAAC;AAEvC,OAAO,EAAE,eAAe,EAAE,MAAM,mBAAmB,CAAC;AAGpD,qBAAa,eAAgB,SAAQ,eAAe;IAEhD,OAAO,CAAC,YAAY,CAAS;IAC7B,OAAO,CAAC,MAAM,CAAS;;IAWhB,OAAO,CAAC,UAAU,EAAE,MAAM;IAa1B,IAAI,CAAC,QAAQ,EAAE,QAAQ;CAwCjC"}

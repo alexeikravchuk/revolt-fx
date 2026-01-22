@@ -3,13 +3,14 @@
   "version": "1.3.5",
   "description": "Particle and Effect System for Pixi.js",
   "main": "./lib/index.js",
-  "types": "./dist/revoltfx.d.ts",
+  "types": "./lib/index.d.ts",
   "module": "./dist/revoltfx.min.js",
   "scripts": {
     "tsc": "tsc",
     "tsc:watch": "tsc -w",
     "rollup": "rollup -c",
-    "build": "npm run tsc & npm run rollup"
+    "build": "npm run tsc && npm run rollup",
+    "dev": "tsc -w"
   },
   "keywords": [
     "Pixi.js",

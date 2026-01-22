@@ -37,3 +37,4 @@ export declare class EffectSequence extends BaseEffect {
     private setNextEffect;
     __applySettings(value: IEffectSequenceSettings): void;
 }
+//# sourceMappingURL=EffectSequence.d.ts.map

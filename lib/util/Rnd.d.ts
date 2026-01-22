@@ -5,3 +5,4 @@ export declare class Rnd {
     static bit(chance?: number): number;
     static integer(min: number, max: number): number;
 }
+//# sourceMappingURL=Rnd.d.ts.map

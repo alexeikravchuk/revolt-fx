@@ -89,3 +89,4 @@ export declare class Particle extends Node implements IParticle, IParticleEmitte
     get on(): IParticleSignals;
     __removeChildEmitter(emitter: ParticleEmitter): void;
 }
+//# sourceMappingURL=Particle.d.ts.map

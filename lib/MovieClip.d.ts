@@ -8,3 +8,4 @@ export declare class MovieClip extends PIXI.AnimatedSprite {
     recycle(): void;
     dispose(): void;
 }
+//# sourceMappingURL=MovieClip.d.ts.map

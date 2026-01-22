@@ -152,3 +152,4 @@ export declare class ParticleSettingsData implements IParticleSettings {
     childs: IEmitterSpawn[];
     constructor(componentId: string);
 }
+//# sourceMappingURL=EmitterSettingsData.d.ts.map

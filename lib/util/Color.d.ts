@@ -15,3 +15,4 @@ export declare class Color {
     setRgb(startRgb: number, targetRgb: number): void;
     tween(ease: Function, time: number, duration: number): number;
 }
+//# sourceMappingURL=Color.d.ts.map

@@ -25,3 +25,4 @@ export declare class BaseEmitterCore {
     get rotation(): number;
     set rotation(value: number);
 }
+//# sourceMappingURL=BaseEmitterCore.d.ts.map

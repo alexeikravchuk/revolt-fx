@@ -4,3 +4,4 @@ export declare enum EffectSequenceComponentType {
     Emitter = 2,
     Trigger = 3
 }
+//# sourceMappingURL=EffectSequenceComponentType.d.ts.map

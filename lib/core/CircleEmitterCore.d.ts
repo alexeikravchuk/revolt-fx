@@ -4,3 +4,4 @@ export declare class CircleEmitterCore extends BaseEmitterCore {
     constructor();
     emit(particle: Particle): void;
 }
+//# sourceMappingURL=CircleEmitterCore.d.ts.map

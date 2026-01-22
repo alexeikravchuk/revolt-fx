@@ -7,3 +7,4 @@ export declare class RingEmitterCore extends BaseEmitterCore {
     prepare(spawnCount: number): void;
     emit(particle: Particle): void;
 }
+//# sourceMappingURL=RingEmitterCore.d.ts.map

@@ -18,3 +18,4 @@ export declare class Node {
     update(dt: number): void;
     dispose(): void;
 }
+//# sourceMappingURL=LinkedList.d.ts.map

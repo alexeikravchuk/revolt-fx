@@ -3,3 +3,4 @@ export declare class Sanitizer {
     private static parse;
     private static _presetStructure;
 }
+//# sourceMappingURL=Sanitizer.d.ts.map

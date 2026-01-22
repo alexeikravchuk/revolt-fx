@@ -16,3 +16,4 @@ export { Easing } from "./util/Easing";
 export { FXSignal } from "./util/FXSignal";
 export { LinkedList } from "./util/LinkedList";
 export { Rnd } from "./util/Rnd";
+//# sourceMappingURL=index.d.ts.map

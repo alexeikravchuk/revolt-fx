@@ -64,3 +64,4 @@ export declare class Easing {
     static easeOutBounce(t: number, b: number, c: number, d: number): number;
     static easeInOutBounce(t: number, b: number, c: number, d: number): number;
 }
+//# sourceMappingURL=Easing.d.ts.map

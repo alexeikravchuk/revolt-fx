@@ -3,3 +3,4 @@ export declare enum EmitterType {
     Box = "box",
     Ring = "ring"
 }
+//# sourceMappingURL=EmitterType.d.ts.map

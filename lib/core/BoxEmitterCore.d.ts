@@ -4,3 +4,4 @@ export declare class BoxEmitterCore extends BaseEmitterCore {
     constructor();
     emit(particle: Particle): void;
 }
+//# sourceMappingURL=BoxEmitterCore.d.ts.map

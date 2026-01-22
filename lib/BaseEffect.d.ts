@@ -33,3 +33,4 @@ export declare class BaseEffect extends Node {
     set x(value: number);
     __applySettings(value: IEffectSequenceSettings | IEmitterSettings): void;
 }
+//# sourceMappingURL=BaseEffect.d.ts.map

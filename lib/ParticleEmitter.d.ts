@@ -58,3 +58,4 @@ export declare class ParticleEmitter extends BaseEffect implements IParticleEmit
     __applySettings(value: IEmitterSettings): void;
     __setCore(type: string): void;
 }
+//# sourceMappingURL=ParticleEmitter.d.ts.map

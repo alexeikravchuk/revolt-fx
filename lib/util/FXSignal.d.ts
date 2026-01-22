@@ -16,3 +16,4 @@ export declare class FXSignalListener {
     calls: number;
     constructor(callback: Function, scope?: any, once?: boolean, callRate?: number);
 }
+//# sourceMappingURL=FXSignal.d.ts.map

@@ -8,3 +8,4 @@ export declare class Sprite extends PIXI.Sprite {
     recycle(): void;
     dispose(): void;
 }
+//# sourceMappingURL=Sprite.d.ts.map

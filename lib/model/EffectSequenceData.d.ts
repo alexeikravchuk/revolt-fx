@@ -29,3 +29,4 @@ export declare class EffectSequenceData implements IEffectSequenceSettings {
     containerId: string;
     constructor(name: string);
 }
+//# sourceMappingURL=EffectSequenceData.d.ts.map
