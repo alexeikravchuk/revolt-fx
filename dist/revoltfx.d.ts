@@ -63,16 +63,10 @@ declare class MovieClip extends PIXI.AnimatedSprite {
     componentId: string;
     __sequenceEndTime: number;
     __fx: FX;
-    get currentFrame(): number;
-    set currentFrame(value: number);
-    private _currentFrame;
     constructor(componentId: string, textures: string[], anchorX?: number, anchorY?: number);
-    /**
-     * Override update to check textures before calling super
-     */
-    update(deltaTime: number): void;
     recycle(): void;
     dispose(): void;
+    update(dt?: number): void;
 }
 
 declare class BaseEmitterCore {
