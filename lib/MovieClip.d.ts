@@ -7,6 +7,5 @@ export declare class MovieClip extends PIXI.AnimatedSprite {
     constructor(componentId: string, textures: string[], anchorX?: number, anchorY?: number);
     recycle(): void;
     dispose(): void;
-    update(dt?: number): void;
 }
 //# sourceMappingURL=MovieClip.d.ts.map
