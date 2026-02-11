@@ -98,11 +98,11 @@ export class ParticleEmitter extends BaseEffect implements IParticleEmitterParen
 
         RX.__addActiveEffect(this);
 
-        let l = s.childs.length;
+        let l = s.children.length;
         this._hasChildEmitters = l > 0;
         if (this._hasChildEmitters) {
             while (--l > -1) {
-                const def = s.childs[l];
+                const def = s.children[l];
                 const em = !this.settings.__isClone ? RX.getParticleEmitterById(def.id) : RX.createParticleEmitterFrom(<IEmitterSettings>def.settings);
                 const container = RX.__containers[em.settings!.containerId] || this.container;
                 em.init(container, true, (def.scale || 1) * (this._scaleMod || 1));
@@ -361,10 +361,10 @@ export class ParticleEmitter extends BaseEffect implements IParticleEmitterParen
         }
 
         if (this._hasChildEmitters) {
-            const childs = this._childEmitters;
-            let l = childs.length;
+            const children = this._childEmitters;
+            let l = children.length;
             while (--l > -1) {
-                childs[l].x = value;
+                children[l].x = value;
             }
         }
     }
@@ -381,10 +381,10 @@ export class ParticleEmitter extends BaseEffect implements IParticleEmitterParen
         }
 
         if (this._hasChildEmitters) {
-            const childs = this._childEmitters;
-            let l = childs.length;
+            const children = this._childEmitters;
+            let l = children.length;
             while (--l > -1) {
-                childs[l].y = value;
+                children[l].y = value;
             }
         }
     }
@@ -393,10 +393,10 @@ export class ParticleEmitter extends BaseEffect implements IParticleEmitterParen
     public set rotation(value: number) {
         this._rotation = this.core.rotation = value;
         if (this._hasChildEmitters) {
-            const childs = this._childEmitters;
-            let l = childs.length;
+            const children = this._childEmitters;
+            let l = children.length;
             while (--l > -1) {
-                const child = childs[l];
+                const child = children[l];
                 if (child.__adoptRotation) {
                     child.rotation = child.settings.rotation + value;
                 }
@@ -415,10 +415,10 @@ export class ParticleEmitter extends BaseEffect implements IParticleEmitterParen
     public set paused(value: boolean) {
         this._paused = value;
         if (this._hasChildEmitters) {
-            const childs = this._childEmitters;
-            let l = childs.length;
+            const children = this._childEmitters;
+            let l = children.length;
             while (--l > -1) {
-                childs[l].paused = value;
+                children[l].paused = value;
             }
         }
     }
@@ -443,10 +443,10 @@ export class ParticleEmitter extends BaseEffect implements IParticleEmitterParen
     }
 
     private stopChildEmitters(waitForParticles: boolean) {
-        const childs = this._childEmitters;
-        let l = childs.length;
+        const children = this._childEmitters;
+        let l = children.length;
         while (--l > -1) {
-            childs[l].stop(waitForParticles);
+            children[l].stop(waitForParticles);
         }
     }
 
@@ -542,9 +542,9 @@ export class ParticleEmitter extends BaseEffect implements IParticleEmitterParen
                 }
             }
 
-            //Clone childs
-            const childs = value.childs;
-            for (const spawn of childs) {
+            //Clone children
+            const children = value.children;
+            for (const spawn of children) {
                 switch (spawn.type) {
                     case SpawnType.ParticleEmitter:
                         spawn.settings = deepClone(fx.__getEmitterSettings(spawn.id));

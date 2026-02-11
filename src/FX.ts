@@ -753,7 +753,7 @@ export interface IEmitterSettings extends IBaseEffect {
     /**
      * Array of child emitters spawned by this emitter
      */
-    childs: IEmitterSpawn[];
+    children: IEmitterSpawn[];
 }
 
 /**
@@ -1388,7 +1388,7 @@ export interface IParticleSettings {
      * The child emitter spawns
      * @type {IEmitterSpawn[]}
      */
-    childs: IEmitterSpawn[];
+    children: IEmitterSpawn[];
 }
 
 /**

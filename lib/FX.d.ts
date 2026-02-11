@@ -327,7 +327,7 @@ export interface IEmitterSettings extends IBaseEffect {
     /**
      * Array of child emitters spawned by this emitter
      */
-    childs: IEmitterSpawn[];
+    children: IEmitterSpawn[];
 }
 /**
  * Interface representing an emitter spawn.
@@ -848,7 +848,7 @@ export interface IParticleSettings {
      * The child emitter spawns
      * @type {IEmitterSpawn[]}
      */
-    childs: IEmitterSpawn[];
+    children: IEmitterSpawn[];
 }
 /**
  * Parameters for the  MovieClipComponent.

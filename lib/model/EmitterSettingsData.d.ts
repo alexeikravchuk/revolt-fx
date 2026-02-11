@@ -21,7 +21,7 @@ export declare class EmitterSettingsData implements IEmitterSettings {
     floorY: number;
     rotation: number;
     autoRotation: number;
-    childs: IEmitterSpawn[];
+    children: IEmitterSpawn[];
     id: any;
     containerId: string;
 }
@@ -149,7 +149,7 @@ export declare class ParticleSettingsData implements IParticleSettings {
     scaleEase: string;
     stopOnBounce: boolean;
     spawn: IEmitterSpawns;
-    childs: IEmitterSpawn[];
+    children: IEmitterSpawn[];
     constructor(componentId: string);
 }
 //# sourceMappingURL=EmitterSettingsData.d.ts.map

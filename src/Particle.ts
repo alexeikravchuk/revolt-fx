@@ -249,11 +249,11 @@ export class Particle extends Node implements IParticle, IParticleEmitterParent 
 
         if (settings.useChilds) {
             this._childEmitters.length = 0;
-            let l = settings.childs.length;
+            let l = settings.children.length;
             this._hasChildEmitters = l > 0;
             if (this._childEmitters) {
                 while (--l > -1) {
-                    const def = settings.childs[l];
+                    const def = settings.children[l];
                     const em = fx.getParticleEmitterById(def.id);
                     em.init(emitter.container, true, (def.scale || 1) * (scaleMod || 1));
                     if (def.adoptRotation) {
@@ -419,10 +419,10 @@ export class Particle extends Node implements IParticle, IParticleEmitterParent 
         }
 
         if (this.useChilds && this._hasChildEmitters) {
-            const childs = this._childEmitters;
-            let l = childs.length;
+            const children = this._childEmitters;
+            let l = children.length;
             while (--l > -1) {
-                const child = childs[l];
+                const child = children[l];
                 if (child.__recycled) continue;
                 child.x = component.position.x;
                 child.y = component.position.y;
@@ -463,10 +463,10 @@ export class Particle extends Node implements IParticle, IParticleEmitterParent 
         }
 
         if (this._hasChildEmitters) {
-            const childs = this._childEmitters;
-            let l = childs.length;
+            const children = this._childEmitters;
+            let l = children.length;
             while (--l > -1) {
-                childs[l].stop(true);
+                children[l].stop(true);
             }
             this._childEmitters.length = 0;
             this._hasChildEmitters = false;

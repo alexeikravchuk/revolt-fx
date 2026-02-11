@@ -17,7 +17,7 @@ export declare class EmitterData implements IEmitterSettings {
     floorY: number;
     rotation: number;
     autoRotation: number;
-    childs: IEmitterSpawn[];
+    children: IEmitterSpawn[];
     id: any;
     containerId: string;
 }

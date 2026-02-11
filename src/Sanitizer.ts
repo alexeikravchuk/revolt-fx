@@ -168,7 +168,7 @@ export class Sanitizer {
                 scaleEndMin: 1,
                 scaleEndMax: 1,
                 scaleEase: 'linear',
-                childs: [],
+                children: [],
                 spawn: {
                     onComplete: [],
                     onBounce: [],
@@ -176,7 +176,7 @@ export class Sanitizer {
                     onStart: []
                 }
             },
-            childs: []
+            children: []
         },
         emitterSpawn: {
             type: 0,

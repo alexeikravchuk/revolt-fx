@@ -33,7 +33,7 @@ export class EmitterSettingsData implements IEmitterSettings {
     floorY: number = 0;
     rotation: number = 0;
     autoRotation: number = 0;
-    childs: IEmitterSpawn[];
+    children: IEmitterSpawn[];
     id: any;
     containerId: string = '';
 }
@@ -176,7 +176,7 @@ export class ParticleSettingsData implements IParticleSettings {
     scaleEase: string = EasingType.Linear;
     stopOnBounce: boolean = false;
     spawn: IEmitterSpawns = new EmitterSpawnsData();
-    childs: IEmitterSpawn[];
+    children: IEmitterSpawn[];
 
     constructor(public componentId: string) {
     }
