@@ -47,7 +47,7 @@ export class Particle extends Node implements IParticle, IParticleEmitterParent 
     public useScale: boolean;
     public useAlpha: boolean;
     public useSpawns: boolean;
-    public useChilds: boolean;
+    public useChildren: boolean;
 
     public uniformScale: boolean;
 
@@ -148,7 +148,7 @@ export class Particle extends Node implements IParticle, IParticleEmitterParent 
         this.useAlpha = settings.useAlpha;
         this.useTint = settings.useTint;
         this.useSpawns = settings.useSpawns;
-        this.useChilds = settings.useChilds;
+        this.useChildren = settings.useChildren;
         this.useMotion = settings.useMotion;
 
         if (this.useGravity) {
@@ -247,7 +247,7 @@ export class Particle extends Node implements IParticle, IParticleEmitterParent 
             this._color.setRgb(settings.tintStart, settings.tintEnd);
         }
 
-        if (settings.useChilds) {
+        if (settings.useChildren) {
             this._childEmitters.length = 0;
             let l = settings.children.length;
             this._hasChildEmitters = l > 0;
@@ -418,7 +418,7 @@ export class Particle extends Node implements IParticle, IParticleEmitterParent 
             }
         }
 
-        if (this.useChilds && this._hasChildEmitters) {
+        if (this.useChildren && this._hasChildEmitters) {
             const children = this._childEmitters;
             let l = children.length;
             while (--l > -1) {

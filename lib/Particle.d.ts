@@ -33,7 +33,7 @@ export declare class Particle extends Node implements IParticle, IParticleEmitte
     useScale: boolean;
     useAlpha: boolean;
     useSpawns: boolean;
-    useChilds: boolean;
+    useChildren: boolean;
     uniformScale: boolean;
     useScaleIn: boolean;
     scaleInEase: Function;

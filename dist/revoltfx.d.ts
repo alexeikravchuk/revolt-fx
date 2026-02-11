@@ -207,7 +207,7 @@ declare class Particle extends Node implements IParticle, IParticleEmitterParent
     useScale: boolean;
     useAlpha: boolean;
     useSpawns: boolean;
-    useChilds: boolean;
+    useChildren: boolean;
     uniformScale: boolean;
     useScaleIn: boolean;
     scaleInEase: Function;
@@ -874,7 +874,7 @@ interface IParticleSettings {
     /**
      * Flag indicating whether child particles are enabled.
      */
-    useChilds: boolean;
+    useChildren: boolean;
     /**
      * Flag indicating whether spawn particles are enabled.
      */

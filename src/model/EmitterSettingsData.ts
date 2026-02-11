@@ -126,7 +126,7 @@ export class ParticleSettingsData implements IParticleSettings {
     useAlpha: boolean = false;
     useScale: boolean = false;
     useTint: boolean = false;
-    useChilds: boolean = false;
+    useChildren: boolean = false;
     useSpawns: boolean = false;
     distanceMin: number = 0;
     distanceMax: number = 0;

@@ -1107,7 +1107,7 @@ export interface IParticleSettings {
     /**
      * Flag indicating whether child particles are enabled.
      */
-    useChilds: boolean;
+    useChildren: boolean;
 
     /**
      * Flag indicating whether spawn particles are enabled.

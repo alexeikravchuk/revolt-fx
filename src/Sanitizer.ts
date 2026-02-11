@@ -128,7 +128,7 @@ export class Sanitizer {
                 useAlpha: false,
                 useScale: false,
                 useTint: false,
-                useChilds: false,
+                useChildren: false,
                 useSpawns: false,
                 stopOnBounce: false,
                 align: false,
